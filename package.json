@@ -1,0 +1,22 @@
+{
+  "name": "hehehehe",
+  "version": "1.0.0",
+  "description": "HLS-Stream-Creator ==================",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bentasker/HLS-Stream-Creator.git"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bentasker/HLS-Stream-Creator/issues"
+  },
+  "homepage": "https://github.com/bentasker/HLS-Stream-Creator#readme"
+}
