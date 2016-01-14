@@ -4,7 +4,6 @@ var url = require('url');
 var path = require('path');
 var zlib = require('zlib');
 
-PORT = 8400;
 var count = {
   '480p':0,
   '720p':0,
@@ -95,4 +94,4 @@ http.createServer(function (req, res) {
             }
         }
     });
-}).listen(8400);
+}).listen(process.env.PORT || 8080);
