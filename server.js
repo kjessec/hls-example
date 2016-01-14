@@ -13,7 +13,7 @@ var count = {
 http.createServer(function (req, res) {
     var uri = url.parse(req.url).pathname;
 
-    if(uri === '/favico.ico') {
+    if(uri == '/favicon.ico') {
       res.writeHead(404);
       res.end();
       return;
@@ -89,4 +89,4 @@ http.createServer(function (req, res) {
             }
         }
     });
-}).listen(process.env.PORT);
+}).listen(8400);
