@@ -29,7 +29,7 @@ http.createServer(function (req, res) {
             res.write('<html><head><title>HLS Player fed by node.js' +
                 '</title></head><body>');
             res.write('<video src="http://' + req.socket.localAddress +
-                ':' + PORT + '/out.M3U8" controls autoplay></body></html>');
+                ':' + process.env.PORT || 8080 + '/out.M3U8" controls autoplay></body></html>');
             res.end();
             return;
         }
