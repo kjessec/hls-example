@@ -22,7 +22,7 @@ http.createServer(function (req, res) {
             res.end();
             return;
         }
-        
+
 
     var filename = path.join("./output/", uri);
     fs.exists(filename, function (exists) {
@@ -83,4 +83,4 @@ http.createServer(function (req, res) {
             }
         }
     });
-}).listen(PORT);
+}).listen(process.env.PORT);
