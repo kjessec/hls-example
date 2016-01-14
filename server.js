@@ -11,7 +11,7 @@ var count = {
 }
 
 http.createServer(function (req, res) {
-    var uri = url.parse(req.url).pathname;]
+    var uri = url.parse(req.url).pathname;
 
     if(uri === '/favico.ico') {
       res.writeHead(404);
