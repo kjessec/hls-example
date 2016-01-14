@@ -13,6 +13,12 @@ var count = {
 http.createServer(function (req, res) {
     var uri = url.parse(req.url).pathname;
 
+    if(uri == '/') {
+      res.writeHead(404);
+      res.end();
+      return;
+    }
+
     if(uri == '/favicon.ico') {
       res.writeHead(404);
       res.end();
